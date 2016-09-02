@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10089" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="55" id="SUQ-S4-dI0" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SUQ-S4-dI0" id="PUB-JQ-4X0">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pM-WV-bKT">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hQ-fI-Tnb">
+                        <rect key="frame" x="222" y="33" width="85" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Created by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omm-Wq-hdD">
+                        <rect key="frame" x="8" y="33" width="211" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5pM-WV-bKT" firstAttribute="trailing" secondItem="PUB-JQ-4X0" secondAttribute="trailingMargin" id="8QA-Ye-5ou"/>
+                    <constraint firstItem="5pM-WV-bKT" firstAttribute="leading" secondItem="PUB-JQ-4X0" secondAttribute="leadingMargin" id="9Mo-03-vp0"/>
+                    <constraint firstItem="Omm-Wq-hdD" firstAttribute="leading" secondItem="PUB-JQ-4X0" secondAttribute="leadingMargin" id="HAy-G3-g2D"/>
+                    <constraint firstItem="5pM-WV-bKT" firstAttribute="top" secondItem="PUB-JQ-4X0" secondAttribute="topMargin" id="cbO-sj-5EY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3hQ-fI-Tnb" secondAttribute="trailing" constant="5" id="zIz-OC-97W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblCreatedBy" destination="Omm-Wq-hdD" id="05l-8T-thc"/>
+                <outlet property="lblDate" destination="3hQ-fI-Tnb" id="S20-yf-h6D"/>
+                <outlet property="lblSubject" destination="5pM-WV-bKT" id="kbJ-cZ-XA7"/>
+            </connections>
+            <point key="canvasLocation" x="269" y="116.5"/>
+        </tableViewCell>
+    </objects>
+</document>
